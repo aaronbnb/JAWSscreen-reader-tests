@@ -1,0 +1,19 @@
+div, p, header, footer, li, ul, ol, figcaption, img, input, form {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+}
+
+div.code-container {
+  border: 1px solid lightgrey;
+  padding: 8px;
+  max-width: 562px;
+}
+
+div.input-container {
+  display: flex;
+  max-width: 300px;
+  justify-content: space-around;
+}

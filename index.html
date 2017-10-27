@@ -6,7 +6,59 @@
     <meta property="og:locale" content="en_US">
     <meta name="Description" content="Screen readers, HTML interactions. This page presents examples of how small changes in HTML can produce vastly different text-to-speech synthesizations. These examples are meant to show how to craft form elements such as inputs in way that produces best experience for screen reader users">
   </head>
+  <link rel="stylesheet" href="./assets/application.css">
   <body>
+
+    <div class="input-container">
+      <div>
+        <label for="username">Username</label>
+        <input type="text" placeholder="Username" id="username" class="username">
+      </div>
+      <div class="">
+        <button type="submit" name="enter" class="">Enter</button>
+      </div>
+    </div>
+
+    <br>
+    
+    <div class="code-container">
+       <span style="color:brown">
+         <span style="color:mediumblue">&lt;</span>div<span style="color:mediumblue">&gt;</span>
+       </span>
+       <br>
+        <span style="color:brown">
+          <span style="color:mediumblue">&lt;</span>label
+          <span style="color:red"> for<span style="color:mediumblue">="username"</span></span>
+          <span style="color:red"> id<span style="color:mediumblue">="username"</span></span><span style="color:mediumblue">&gt;</span>
+          <br>
+          <span style="color:mediumblue">&lt;</span>input
+          <span style="color:red"> type<span style="color:mediumblue">="text"</span></span>
+          <span style="color:red"> placeholder<span style="color:mediumblue">="Username"</span></span>
+          <span style="color:red"> class<span style="color:mediumblue">="username-text"</span></span>
+          <span style="color:red"> id<span style="color:mediumblue">="username"</span></span><span style="color:mediumblue">&gt;</span>
+        </span>
+       <br>
+       <span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span>
+      </div>
+
+
+
+
+
+
+
+    <div class="">
+      <label for="username">Username</label>
+      <input type="text" id="username" class="username">
+    </div>
+
+    <form method="get" role="search" action="/search/" id="sitesearch">
+			<p class="search">
+        <label for="q" class="hidden">Search Terms</label>
+        <input type="text" name="q" id="q" placeholder="Search WebAIM">
+        <input type="image" src="./assets/images/search.png" alt="Submit Search" height="18" width="18">
+      </p>
+		</form>
 
   </body>
 </html>
